@@ -1,0 +1,25 @@
+airquality <- datasets::airquality
+head(airquality,10)
+tail(airquality,10)
+airquality[,c(1,2)]
+df<- airquality[,-6]
+boxplot(airquality$Wind,main="boxplot")
+summary(airquality$Ozone)
+summary(airquality)
+plot(airquality$Wind)
+plot(airquality$Wind,type="l")
+plot(airquality)
+plot(airquality$Wind,xlab='this is shit',ylab='no of times happen',main='&$^&*',col='blue')
+barplot(airquality$Temp, main= 'temperature' , ylab=' level' , col='blue',horiz=F)
+hist(airquality$Temp)
+boxplot(airquality$Wind,main="boxplot")
+boxplot.stats(airquality$Wind)$out
+boxplot(airquality[1:5],main="temperature")
+par(mfrow=c(3,3),mar=c(2,5,2,1),las=0)
+plot(airquality$Wind)
+hist(airquality$Temp)
+plot(airquality$Wind,type="l")
+boxplot(airquality$Wind,main="boxplot")
+summary(airquality$Ozone)
+barplot(airquality$Temp, main= 'temperature' , ylab='level' , col='blue',horiz=F)
+hist(airquality$Wind)
